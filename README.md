@@ -1,0 +1,230 @@
+[الماسة _ كاميرات مراقبة للمنزل (2).html](https://github.com/user-attachments/files/34399356/_.2.html)
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light" style="color-scheme: light;"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الماسة | كاميرات مراقبة للمنزل</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#081a45;--card:#0f2a63;--text:#eef4ff;--muted:#a9bbe0;--accent:#6cc6ff;--line:#23418a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Cairo',Tahoma,Arial,sans-serif;line-height:1.7}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{padding:16px 0;border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;font-size:28px;font-weight:800;color:var(--accent)}
+.logo svg{width:34px;height:34px}
+.hero{text-align:center;padding:52px 0 32px}
+.hero h1{font-size:clamp(28px,6vw,44px);margin:0 0 10px;font-weight:800}
+.hero p{color:var(--muted);font-size:18px;margin:0}
+.notice{display:inline-block;margin-top:18px;padding:8px 18px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;padding:20px 0 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center}
+.card .ic{font-size:44px}
+.card h3{margin:8px 0 4px;font-size:19px}
+.card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.price{font-weight:700;color:var(--accent)}
+.del{margin-top:10px;background:none;border:1px solid #ff7b7b;color:#ff9b9b;border-radius:8px;padding:4px 12px;font:inherit;cursor:pointer}
+footer{border-top:1px solid var(--line);padding:22px 0;text-align:center;color:var(--muted)}
+footer button{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;text-decoration:underline;margin-inline-start:8px}
+.modal{position:fixed;inset:0;background:rgba(2,8,25,.8);display:flex;align-items:center;justify-content:center;padding:20px;z-index:20}
+.modal[hidden],#panel[hidden]{display:none}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;width:100%;max-width:380px}
+.box h3{margin:0 0 12px}
+input,textarea{width:100%;margin-bottom:10px;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:#081a45;color:var(--text);font:inherit}
+.btn{background:var(--accent);color:#04163a;border:0;border-radius:8px;padding:10px 18px;font:inherit;font-weight:700;cursor:pointer}
+.btn.alt{background:none;color:var(--text);border:1px solid var(--line)}
+.msg{color:#ffb3b3;min-height:24px;margin:6px 0}
+#panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 30px}
+.inst{margin-top:18px;font-size:18px;padding:12px 26px}
+.box{max-height:90vh;overflow:auto}
+.cartbtn{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));inset-inline-start:16px;z-index:15;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.cartbtn[hidden]{display:none}
+.btn.add{margin-top:6px;padding:6px 16px}
+.btn.sm{padding:2px 12px}
+.ci{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line)}
+.pimg{width:100%;height:160px;object-fit:cover;border-radius:10px;background:#081a45}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo" id="logo" role="link" tabindex="0" style="cursor:pointer">
+<svg viewBox="0 0 64 64" aria-hidden="true"><polygon points="12,8 52,8 62,24 32,58 2,24" fill="#6cc6ff"></polygon><polygon points="12,8 22,24 32,8" fill="#a8e0ff"></polygon><polygon points="32,8 42,24 52,8" fill="#a8e0ff"></polygon><polygon points="2,24 22,24 32,58" fill="#3f9be0"></polygon><polygon points="62,24 42,24 32,58" fill="#3f9be0"></polygon><polygon points="22,24 42,24 32,58" fill="#6cc6ff"></polygon></svg>
+<span>الماسة</span></div></div></header>
+<main class="wrap">
+  <section class="hero">
+    <h1>كاميرات مراقبة لحماية بيتك</h1>
+    <p>أجهزة أصلية وجودة عالية لأمان أسرتك</p>
+    <span class="notice">الاستلام من المحل فقط – لا يوجد توصيل</span><br><button class="btn inst" id="inst">طلب تركيب كاميرات</button>
+  </section>
+  <section id="panel" hidden="">
+    <h3>إضافة منتج جديد</h3>
+    <input id="pn" placeholder="اسم المنتج">
+    <textarea id="pd" rows="2" placeholder="وصف قصير"></textarea>
+    <input id="pp" placeholder="السعر (اختياري) مثال: 1500 جنيه">
+    <input id="pi" type="file" accept="image/*">
+    <div class="msg" id="pm"></div>
+    <button class="btn" id="add">إضافة ونشر</button>
+    <button class="btn alt" id="lock">قفل</button>
+  </section>
+  <section class="grid" id="grid"></section>
+</main>
+<footer><div class="wrap">الماسة – الإسكندرية · للتواصل: <a href="tel:015505504234" dir="ltr" style="color:inherit">015505504234</a> · <a href="https://wa.me/201223505021" target="_blank" rel="noopener" dir="ltr" style="color:inherit;display:inline-flex;align-items:center;gap:6px;vertical-align:middle"><svg viewBox="0 0 24 24" width="22" height="22" aria-label="WhatsApp"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z" fill="#25D366"></path><path d="M8.5 7.5c-.4.4-.8 1.2-.3 2.4.7 1.7 2.1 3.2 3.9 4.1 1.1.5 1.9.2 2.3-.2l.5-.7c.1-.2.1-.4-.1-.5l-1.6-.8c-.2-.1-.4 0-.5.1l-.5.6c-.1.1-.3.1-.4.1-.9-.4-1.6-1.1-2-2 0-.1 0-.3.1-.4l.5-.5c.1-.1.2-.3.1-.5l-.7-1.6c-.1-.2-.3-.3-.5-.2z" fill="#fff"></path></svg>01223505021</a> <button id="adm">إدارة</button></div></footer>
+<div class="modal" id="modal" hidden=""><div class="box">
+  <h3>دخول الإدارة</h3>
+  <input id="pw" type="password" placeholder="كلمة السر" autocomplete="off">
+  <div class="msg" id="pwm"></div>
+  <button class="btn" id="go">دخول</button> <button class="btn alt" id="x">إلغاء</button>
+</div></div>
+<button class="btn cartbtn" id="cbtn" hidden="">🛒 السلة (<span id="cn">0</span>)</button>
+<div class="modal" id="cmodal" hidden=""><div class="box">
+  <h3>سلة الحجز</h3>
+  <div id="clist"></div>
+  <input id="cname" placeholder="الاسم" autocomplete="name" style="margin-top:12px">
+  <input id="cphone" type="tel" placeholder="رقم التليفون" autocomplete="tel" dir="rtl">
+  <div class="msg" id="cm"></div>
+  <button class="btn" id="csend">احجز على واتساب</button> <button class="btn alt" id="cx">رجوع</button>
+</div></div>
+<div class="modal" id="imodal" hidden=""><div class="box">
+  <h3>طلب تركيب كاميرات</h3>
+  <input id="iname" placeholder="الاسم" autocomplete="name">
+  <input id="iaddr" placeholder="العنوان" autocomplete="street-address">
+  <input id="iphone" type="tel" placeholder="رقم التليفون" autocomplete="tel" dir="rtl">
+  <div class="msg" id="im"></div>
+  <button class="btn" id="isend">إرسال على واتساب</button> <button class="btn alt" id="ix">إلغاء</button>
+</div></div>
+<script id="data" type="application/json">[{"n":"كاميرا داخلية","d":"للغرف والصالة، صورة واضحة وتركيب سهل","p":""},{"n":"كاميرا خارجية","d":"مقاومة للماء والغبار للحديقة والمدخل","p":""},{"n":"رؤية ليلية","d":"تصوير واضح في الظلام الكامل","p":""},{"n":"كاميرا واي فاي","d":"شاهد بيتك من الموبايل في أي وقت","p":""}]</script>
+<script>
+const HASH="ddc2bd5dfab23f6066f79b3bd6b65e94573c7063a04b986717e8ac27073692fb";
+let products=JSON.parse(document.getElementById('data').textContent);
+let admin=false;
+const $=id=>document.getElementById(id);
+try{admin=sessionStorage.getItem('almasa_admin')==='1'}catch(e){}
+function render(){
+  const g=$('grid');g.innerHTML='';
+  products.forEach((x,i)=>{
+    const c=document.createElement('div');c.className='card';
+    const ic=x.i?document.createElement('img'):document.createElement('div');
+    if(x.i){ic.src=String(x.i).startsWith('data:')?x.i:'/_blob/'+x.i;ic.alt=x.n;ic.className='pimg'}else{ic.className='ic';ic.textContent='📷'}
+    const h=document.createElement('h3');h.textContent=x.n;
+    const p=document.createElement('p');p.textContent=x.d||'';
+    const pr=document.createElement('div');pr.className='price';pr.textContent=x.p||'اسأل عن السعر';
+    c.append(ic,h,p,pr);
+    const ab=document.createElement('button');ab.className='btn add';ab.textContent='أضف للسلة';ab.onclick=()=>addCart(x.n);c.append(ab);
+    if(admin){const b=document.createElement('button');b.className='del';b.textContent='حذف';b.onclick=()=>{if(b.dataset.sure){products.splice(i,1);save()}else{b.dataset.sure='1';b.textContent='تأكيد الحذف؟';setTimeout(()=>{delete b.dataset.sure;b.textContent='حذف'},3000)}};c.append(b);const ib=document.createElement('button');ib.className='del';ib.style.marginInlineStart='6px';ib.textContent='تغيير الصورة';ib.onclick=()=>pickImg(i);c.append(ib)}
+    g.append(c);
+  });
+  $('panel').hidden=!admin;
+}
+async function sha(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+async function save(){
+  render();
+  const art=await claude.use('artifact');
+  if(!art){$('pm').textContent='النشر غير متاح. افتح الصفحة من حسابك على Claude.';return}
+  const c=document.documentElement.cloneNode(true);
+  c.querySelector('#data').textContent=JSON.stringify(products).replace(/</g,'\\u003c');
+  c.querySelector('#grid').innerHTML='';
+  c.querySelector('#modal').setAttribute('hidden','');
+  c.querySelector('#imodal').setAttribute('hidden','');
+  c.querySelector('#cmodal').setAttribute('hidden','');
+  c.querySelector('#cbtn').setAttribute('hidden','');
+  c.querySelector('#clist').innerHTML='';
+  c.querySelector('#panel').setAttribute('hidden','');
+  c.querySelector('#pm').textContent='';
+  try{await art.publish('<!DOCTYPE html>\n'+c.outerHTML)}catch(e){$('pm').textContent='تعذر النشر. تأكد إنك فاتح الصفحة بحسابك.'}
+}
+$('adm').onclick=()=>{if(admin){$('panel').scrollIntoView()}else{$('modal').hidden=false;$('pw').focus()}};
+$('x').onclick=()=>{$('modal').hidden=true};
+$('go').onclick=async()=>{
+  if(await sha($('pw').value)===HASH){admin=true;try{sessionStorage.setItem('almasa_admin','1')}catch(e){}$('modal').hidden=true;$('pw').value='';render();$('panel').scrollIntoView()}
+  else{$('pwm').textContent='كلمة السر غلط'}
+};
+$('pw').onkeydown=e=>{if(e.key==='Enter')$('go').click()};
+$('lock').onclick=()=>{admin=false;try{sessionStorage.removeItem('almasa_admin')}catch(e){}render()};
+function shrink(f){return new Promise((res,rej)=>{
+  const rd=new FileReader();
+  rd.onerror=rej;
+  rd.onload=()=>{
+    const im=new Image();
+    im.onerror=rej;
+    im.onload=()=>{
+      const s=Math.min(1,700/Math.max(im.width,im.height));
+      const cv=document.createElement('canvas');
+      cv.width=Math.round(im.width*s);cv.height=Math.round(im.height*s);
+      cv.getContext('2d').drawImage(im,0,0,cv.width,cv.height);
+      res(cv.toDataURL('image/jpeg',0.8));
+    };
+    im.src=rd.result;
+  };
+  rd.readAsDataURL(f);
+})}
+function pickImg(i){
+  const inp=document.createElement('input');inp.type='file';inp.accept='image/*';
+  inp.onchange=async()=>{const f=inp.files[0];if(!f)return;
+    try{products[i].i=await shrink(f);save()}catch(e){$('pm').textContent='تعذر قراءة الصورة. جرّب صورة تانية.'}};
+  inp.click();
+}
+$('add').onclick=async()=>{
+  const n=$('pn').value.trim();
+  if(!n){$('pm').textContent='اكتب اسم المنتج';return}
+  let i='';
+  const f=$('pi').files[0];
+  if(f){
+    $('pm').textContent='جاري تجهيز الصورة...';
+    try{i=await shrink(f)}catch(e){$('pm').textContent='تعذر قراءة الصورة. جرّب صورة تانية.';return}
+  }
+  $('pm').textContent='';
+  products.push({n,d:$('pd').value.trim(),p:$('pp').value.trim(),i});
+  $('pn').value=$('pd').value=$('pp').value='';$('pi').value='';
+  save();
+};
+let cart={};
+function cartCount(){return Object.values(cart).reduce((a,b)=>a+b,0)}
+function addCart(n){cart[n]=(cart[n]||0)+1;cartUI()}
+function cartUI(){
+  const k=cartCount();$('cn').textContent=k;$('cbtn').hidden=k===0;
+  if(!k)$('cmodal').hidden=true;
+  const l=$('clist');l.innerHTML='';
+  const mk=(t,f)=>{const b=document.createElement('button');b.className='btn alt sm';b.textContent=t;b.onclick=f;return b};
+  Object.keys(cart).forEach(n=>{
+    const r=document.createElement('div');r.className='ci';
+    const s=document.createElement('span');s.textContent=n;
+    const q=document.createElement('span');
+    const num=document.createElement('b');num.textContent=' '+cart[n]+' ';
+    q.append(mk('+',()=>{cart[n]++;cartUI()}),num,mk('−',()=>{cart[n]--;if(cart[n]<=0)delete cart[n];cartUI()}));
+    r.append(s,q);l.append(r);
+  });
+}
+$('cbtn').onclick=()=>{$('cmodal').hidden=false};
+$('cx').onclick=()=>{$('cmodal').hidden=true};
+$('csend').onclick=()=>{
+  const n=$('cname').value.trim(),t=$('cphone').value.trim();
+  if(!n||!t){$('cm').textContent='اكتب اسمك ورقم تليفونك';return}
+  $('cm').textContent='';
+  const items=Object.keys(cart).map(k=>'- '+k+' × '+cart[k]).join('\n');
+  const m='طلب حجز من الموقع\nالاسم: '+n+'\nرقم التليفون: '+t+'\nالمنتجات:\n'+items+'\n(استلام من المحل)';
+  const l=document.createElement('a');
+  l.href='https://wa.me/201223505021?text='+encodeURIComponent(m);
+  l.target='_blank';l.rel='noopener';
+  document.body.append(l);l.click();l.remove();
+  $('cmodal').hidden=true;
+};
+$('logo').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+$('logo').onkeydown=e=>{if(e.key==='Enter')$('logo').click()};
+$('inst').onclick=()=>{$('imodal').hidden=false;$('iname').focus()};
+$('ix').onclick=()=>{$('imodal').hidden=true};
+$('isend').onclick=()=>{
+  const n=$('iname').value.trim(),a=$('iaddr').value.trim(),t=$('iphone').value.trim();
+  if(!n||!a||!t){$('im').textContent='املأ كل الخانات';return}
+  $('im').textContent='';
+  const m='طلب تركيب كاميرات مراقبة\nالاسم: '+n+'\nالعنوان: '+a+'\nرقم التليفون: '+t;
+  const l=document.createElement('a');
+  l.href='https://wa.me/201223505021?text='+encodeURIComponent(m);
+  l.target='_blank';l.rel='noopener';
+  document.body.append(l);l.click();l.remove();
+  $('imodal').hidden=true;
+};
+render();
+</script>
+
+
+</body></html>
